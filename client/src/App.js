@@ -18,11 +18,10 @@ function App() {
     <Router>
       <Navbar />
       <div className="container mx-auto p-4">
-        <h1>{message}</h1> {/* Keeps your backend connection */}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/budget" element={<BudgetPlanner />} />
+          <Route path="/" element={<Home message={message} />} />
           <Route path="/guide" element={<Guide />} />
+          <Route path="/budget" element={<BudgetPlanner />} />
         </Routes>
       </div>
     </Router>

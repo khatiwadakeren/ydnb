@@ -1,9 +1,12 @@
-const Home = () => {
+const Home = ({ message }) => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
-      <h1 className="text-4xl font-bold text-gray-900 mb-4">
+    <div className="text-center">
+      {/* This message will be removed later when no longer needed */}
+      {message && <h1 className="text-lg text-gray-600">{message}</h1>}
+
+      <h2 className="text-4xl font-bold text-gray-900 mt-4">
         Welcome to the YDNB
-      </h1>
+      </h2>
       <p className="text-lg text-gray-700">
         Start managing your budget wisely!
       </p>
