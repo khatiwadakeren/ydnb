@@ -1,87 +1,151 @@
+import React from "react";
+
 const Guide = () => {
   return (
-    <div className="max-w-4xl mx-auto py-10 px-6">
-      <h1 className="text-4xl font-bold text-center mb-6">Financial Guide</h1>
+    <div className="max-w-4xl mx-auto py-10 px-6 bg-gray-100 shadow-lg rounded-lg">
+      <h1 className="text-4xl font-bold text-center mb-6 text-blue-700">
+        Managing Your Finances: A Beginner’s Guide
+      </h1>
 
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold">📖 Introduction</h2>
-        <p className="text-gray-700 mt-2">
-          Learning to manage your finances is a crucial life skill. While it's
-          never too late to start, the sooner you start, the better.
-        </p>
-      </section>
+      <p className="text-gray-700 mb-6 text-lg text-center">
+        Managing your money doesn’t have to be overwhelming. This guide will
+        help you take the first steps toward understanding your finances by
+        breaking it into manageable categories.
+      </p>
 
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold">💰 Budgeting Basics</h2>
-        <p className="text-gray-700 mt-2">
-          Budgeting involves tracking your income and expenses. A popular method
-          to follow is the <strong>50/30/20 Rule</strong>:
-        </p>
-        <ul className="list-disc list-inside mt-2 text-gray-700">
-          <li>
-            <strong>50%</strong> - Essentials (Rent, Food, Utilities)
-          </li>
-          <li>
-            <strong>30%</strong> - Wants (Entertainment, Shopping, Travel)
-          </li>
-          <li>
-            <strong>20%</strong> - Savings & Investments
-          </li>
-        </ul>
-        <p className="mt-4 text-gray-700">
-          However, this is not a strict rule and you can adjust it to your
-          needs.
-        </p>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold">
-          📊 Creating Your First Budget
+      <section className="mb-8 p-6 bg-white rounded-lg shadow-md">
+        <h2 className="text-2xl font-semibold text-blue-600">
+          Before You Start
         </h2>
         <p className="text-gray-700 mt-2">
-          Follow these steps to build a simple budget:
-        </p>
-        <ol className="list-decimal list-inside mt-2 text-gray-700">
-          <li>List all your sources of income.</li>
-          <li>Identify and categorize expenses.</li>
-          <li>Adjust spending to ensure you are saving at least 20%.</li>
-        </ol>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold">📉 Debt Management</h2>
-        <p className="text-gray-700 mt-2">
-          If you have debt, prioritize paying it off using methods like:
+          A budget should be **realistic and flexible**. While it's important to
+          set spending limits, be mindful of your habits and adjust as needed.
+          Ask yourself:
         </p>
         <ul className="list-disc list-inside mt-2 text-gray-700">
+          <li>Could you shop less frequently for skincare products?</li>
+          <li>Can you cut back on DoorDash and cook more at home?</li>
+        </ul>
+        <p className="text-gray-700 mt-2">
+          Every dollar saved here is a dollar you can invest in your future. The
+          key is **balance**—cutting back without making budgeting feel like a
+          punishment.
+        </p>
+      </section>
+
+      <section className="mb-8 p-6 bg-white rounded-lg shadow-md">
+        <h2 className="text-2xl font-semibold text-blue-600">
+          Step 1: List Your Monthly Income
+        </h2>
+        <p className="text-gray-700 mt-2">
+          Start by listing all your sources of income. This includes your
+          paycheck(s), side hustles, or any other regular income.
+        </p>
+      </section>
+
+      <section className="mb-8 p-6 bg-white rounded-lg shadow-md">
+        <h2 className="text-2xl font-semibold text-blue-600">
+          Step 2: Identify Your Monthly Expenses
+        </h2>
+        <p className="text-gray-700 mt-2">
+          Break your expenses into three categories:
+        </p>
+
+        <h3 className="text-xl font-semibold mt-4 text-gray-800">
+          Bills (Non-Negotiables):
+        </h3>
+        <ul className="list-disc list-inside mt-2 text-gray-700">
+          <li>Rent or mortgage</li>
+          <li>Utilities</li>
+          <li>Insurance</li>
+          <li>Loan payments (e.g., car, student loans)</li>
+        </ul>
+
+        <h3 className="text-xl font-semibold mt-4 text-gray-800">
+          Variable Necessities:
+        </h3>
+        <ul className="list-disc list-inside mt-2 text-gray-700">
+          <li>Groceries</li>
+          <li>Toiletries</li>
+          <li>Household supplies</li>
+        </ul>
+
+        <h3 className="text-xl font-semibold mt-4 text-gray-800">
+          Discretionary Spending:
+        </h3>
+        <ul className="list-disc list-inside mt-2 text-gray-700">
+          <li>Eating out</li>
+          <li>Subscriptions (Netflix, Spotify)</li>
+          <li>Shopping</li>
+          <li>Entertainment (concerts, events)</li>
+        </ul>
+      </section>
+
+      <section className="mb-8 p-6 bg-white rounded-lg shadow-md">
+        <h2 className="text-2xl font-semibold text-blue-600">
+          Step 3: Calculate What’s Left
+        </h2>
+        <p className="text-gray-700 mt-2">
+          Subtract your total bills from your monthly income. This leftover
+          amount is what you can use for:
+        </p>
+        <ul className="list-disc list-inside mt-2 text-gray-700">
+          <li>Variable Necessities</li>
+          <li>Discretionary spending</li>
+          <li>Savings and investments</li>
+        </ul>
+      </section>
+
+      <section className="mb-8 p-6 bg-white rounded-lg shadow-md">
+        <h2 className="text-2xl font-semibold text-blue-600">
+          Step 4: Prioritize Savings
+        </h2>
+        <p className="text-gray-700 mt-2">
+          Before spending on anything else, prioritize saving at least 20% of
+          your income (or what you can realistically afford). Here’s how:
+        </p>
+
+        <h3 className="text-xl font-semibold mt-4 text-gray-800">
+          Emergency Fund:
+        </h3>
+        <p className="text-gray-700 mt-2">
+          Save 3–6 months of living expenses in a high-yield savings account.
+          This acts as a safety net for unexpected situations like medical bills
+          or job loss.
+        </p>
+
+        <h3 className="text-xl font-semibold mt-4 text-gray-800">Investing:</h3>
+        <ul className="list-disc list-inside mt-2 text-gray-700">
           <li>
-            <strong>Snowball Method:</strong> Pay off the smallest debt first to
-            build momentum.
+            Roth IRA or Traditional IRA: Great for long-term retirement savings.
           </li>
           <li>
-            <strong>Avalanche Method:</strong> Pay off the highest-interest debt
-            first to save money over time.
+            Individual Investment Accounts: Useful for medium- to long-term
+            goals.
           </li>
         </ul>
       </section>
 
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold">📈 Saving & Investing</h2>
+      <section className="mb-8 p-6 bg-white rounded-lg shadow-md">
+        <h2 className="text-2xl font-semibold text-blue-600">
+          Step 5: Make It a Habit
+        </h2>
         <p className="text-gray-700 mt-2">
-          An emergency fund should cover at least 3-6 months of expenses. Once
-          that’s set, consider beginner-friendly investments like index funds.
+          Revisit your budget every month and adjust as needed. Building good
+          financial habits takes time, but consistency pays off.
         </p>
       </section>
 
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold">🛒 Smart Spending Habits</h2>
+      <section className="p-6 bg-white rounded-lg shadow-md">
+        <h2 className="text-2xl font-semibold text-blue-600">Next Steps</h2>
         <p className="text-gray-700 mt-2">
-          Make intentional purchases and cut unnecessary expenses by:
+          Eventually, this guide will expand into more detailed resources, such
+          as:
         </p>
         <ul className="list-disc list-inside mt-2 text-gray-700">
-          <li>Tracking your spending</li>
-          <li>Using cashback apps</li>
-          <li>Setting a 24-hour rule before big purchases</li>
+          <li>How to choose a high-yield savings account</li>
+          <li>Understanding credit cards</li>
+          <li>Investing basics for beginners</li>
         </ul>
       </section>
     </div>
